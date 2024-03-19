@@ -1,0 +1,20 @@
+{
+  "name": "block",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A block puzzle game",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base /block/",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^6.44.0",
+    "@babylonjs/inspector": "^6.44.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1"
+  }
+}

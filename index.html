@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Block</title>
-    <style>
-        body {
-            text-align:center;
-            font-family: 'Rajdhani', sans-serif;
-            font-size: 2em;
-            color:#066665;
-        }
-        img {
-            width:100%;
-            max-width: 1200px;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:700" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="intro">
+        <img src="img/block_start.jpg" /><br/>
+        Click anywhere to start
+    </div>
+    <div id="game">
+        <div id="loadingWrapper">
+            <div id="loadingValue">
+                0%
+            </div>
+            <div id="loadingText">
+                Loading in progress...
+            </div>
+        </div>
 
-    <link href='http://fonts.googleapis.com/css?family=Rajdhani:700' rel='stylesheet' type='text/css'>
-</head>
-<body>
-    <img src="img/block_start.jpg" /><br/>
-Click anywhere to start
-<script>
-    window.addEventListener("click", function() {
-        window.location = "game.html";
-    })
-</script>
-</body>
+        <div id="textBack">
+            <div id="text"></div>
+        </div>
+
+        <div id="nbTurnBack">
+            <div id="nbTurn">0</div>
+        </div>
+    </div>
+    <div id="finish">
+        <img src="img/block_finish.jpg" /><br/>
+    </div>
+    <canvas id="renderCanvas"></canvas>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
